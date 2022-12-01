@@ -35,3 +35,8 @@ In this tutorial, here's what these layers will do:
 - Repository: abstract the data layer and expose domain models for the application to consume
 - Business Logic: manage the state of each feature (unit information, city details, themes, etc.)
 - Presentation: display weather information and collect input from users (settings page, search page etc.)
+
+Repository Layer:
+
+The goal of our repository layer is to abstract our data layer and facilitate communication with the bloc layer. In doing this, the rest of our code base depends only on functions exposed by our repository layer instead of specific data provider implementations. This allows us to change data providers without disrupting any of the application-level code. For example, if we decide to migrate away from metaweather, we should be able to create a new API client and swap it out without having to make changes to the public API of the repository or application layers.
+
