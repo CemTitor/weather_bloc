@@ -15,7 +15,7 @@ Our app should let users
 - The theme of the application should reflect the weather for the chosen city
 - Application state should persist across sessions: i.e., the app should remember its state after closing and reopening it (using HydratedBloc)
 
-##  Key Concepts
+## Key Concepts
 
 - Observe state changes with BlocObserver
 - BlocProvider, Flutter widget that provides a bloc to its children
