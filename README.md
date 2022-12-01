@@ -15,7 +15,7 @@ Our app should let users
 - The theme of the application should reflect the weather for the chosen city
 - Application state should persist across sessions: i.e., the app should remember its state after closing and reopening it (using HydratedBloc)
 
-#Key Concepts
+## Key Concepts
 
 - Observe state changes with BlocObserver
 - BlocProvider, Flutter widget that provides a bloc to its children
@@ -35,3 +35,4 @@ In this tutorial, here's what these layers will do:
 - Repository: abstract the data layer and expose domain models for the application to consume
 - Business Logic: manage the state of each feature (unit information, city details, themes, etc.)
 - Presentation: display weather information and collect input from users (settings page, search page etc.)
+
