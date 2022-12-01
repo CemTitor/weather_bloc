@@ -35,4 +35,3 @@ In this tutorial, here's what these layers will do:
 - Repository: abstract the data layer and expose domain models for the application to consume
 - Business Logic: manage the state of each feature (unit information, city details, themes, etc.)
 - Presentation: display weather information and collect input from users (settings page, search page etc.)
-
