@@ -26,3 +26,12 @@ Our app should let users
 - MultiBlocProvider, a Flutter widget that merges multiple BlocProvider widgets into one
 - BlocConsumer, a Flutter widget that exposes a builder and listener in order to react to new states
 - HydratedBloc to manage and persist state
+
+## Architecture
+
+In this tutorial, here's what these layers will do:
+
+- Data: retrieve raw weather data from the API
+- Repository: abstract the data layer and expose domain models for the application to consume
+- Business Logic: manage the state of each feature (unit information, city details, themes, etc.)
+- Presentation: display weather information and collect input from users (settings page, search page etc.)
