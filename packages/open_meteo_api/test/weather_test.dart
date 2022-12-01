@@ -11,7 +11,7 @@ void main() {
           ),
           isA<Weather>()
               .having((w) => w.temperature, 'temperature', 15.3)
-              .having((w) => w.weathercode, 'weatherCode', 63),
+              .having((w) => w.weatherCode, 'weatherCode', 63),
         );
       });
     });

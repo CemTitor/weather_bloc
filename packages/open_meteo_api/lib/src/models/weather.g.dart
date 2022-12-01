@@ -15,9 +15,10 @@ Weather _$WeatherFromJson(Map<String, dynamic> json) => $checkedCreate(
         final val = Weather(
           temperature:
               $checkedConvert('temperature', (v) => (v as num).toDouble()),
-          weathercode:
+          weatherCode:
               $checkedConvert('weathercode', (v) => (v as num).toDouble()),
         );
         return val;
       },
+      fieldKeyMap: const {'weatherCode': 'weathercode'},
     );

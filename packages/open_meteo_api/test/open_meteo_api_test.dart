@@ -1,10 +1,11 @@
+///We don't want our tests to make real API calls since our goal is to test the API client logic (including all edge cases) and not the API itself. In order to have a consistent, controlled test environment, we will use mocktail (which we added to the pubspec.yaml file earlier) to mock the http client.
+
 // ignore_for_file: prefer_const_constructors
 import 'package:http/http.dart' as http;
 import 'package:mocktail/mocktail.dart';
 import 'package:open_meteo_api/open_meteo_api.dart';
 import 'package:test/test.dart';
 
-///We don't want our tests to make real API calls since our goal is to test the API client logic (including all edge cases) and not the API itself. In order to have a consistent, controlled test environment, we will use mocktail (which we added to the pubspec.yaml file earlier) to mock the http client.
 class MockHttpClient extends Mock implements http.Client {}
 
 class MockResponse extends Mock implements http.Response {}
@@ -195,7 +196,7 @@ void main() {
           actual,
           isA<Weather>()
               .having((w) => w.temperature, 'temperature', 15.3)
-              .having((w) => w.weathercode, 'weatherCode', 63.0),
+              .having((w) => w.weatherCode, 'weatherCode', 63.0),
         );
       });
     });
