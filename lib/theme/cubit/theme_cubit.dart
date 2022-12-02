@@ -12,13 +12,13 @@ class ThemeCubit extends HydratedCubit<Color> {
   }
 
   @override
-  Color? fromJson(Map<String, dynamic> json) {
+  Color fromJson(Map<String, dynamic> json) {
     return Color(int.parse(json['color'] as String));
   }
 
   @override
   Map<String, dynamic> toJson(Color state) {
-    return {'color': '${state.value}'};
+    return <String, String>{'color': '${state.value}'};
   }
 }
 
