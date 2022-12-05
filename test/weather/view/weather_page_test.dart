@@ -1,6 +1,5 @@
 // ignore_for_file: prefer_const_constructors
-///The bloc_test library also exposes MockBlocs and MockCubits which make it easy to test UI. We can mock the states of the various cubits and ensure that the UI reacts correctly.
-///We're using a MockWeatherCubit together with the when API from mocktail in order to stub the state of the cubit in each of the test cases. This allows us to simulate all states and verify the UI behaves correctly under all circumstances.
+
 import 'package:bloc_test/bloc_test.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -12,7 +11,7 @@ import 'package:weather_bloc/weather/weather.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:weather_repository/weather_repository.dart' hide Weather;
 
-import 'helpers/hydrated_bloc.dart';
+import '../../helpers/hydrated_bloc.dart';
 
 class MockWeatherRepository extends Mock implements WeatherRepository {}
 

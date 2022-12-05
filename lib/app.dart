@@ -7,10 +7,10 @@ import 'package:weather_repository/weather_repository.dart';
 
 ///Our app.dart widget will handle building the WeatherPage view we previously created and use BlocProvider to inject our ThemeCubit which handles theme data.
 class WeatherApp extends StatelessWidget {
+  final WeatherRepository _weatherRepository;
+
   const WeatherApp({super.key, required WeatherRepository weatherRepository})
       : _weatherRepository = weatherRepository;
-
-  final WeatherRepository _weatherRepository;
 
   @override
   Widget build(BuildContext context) {
