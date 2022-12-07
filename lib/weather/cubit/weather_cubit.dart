@@ -12,9 +12,9 @@ part 'weather_state.dart';
 ///HydratedCubit is an extension of Cubit which handles PERSISTING and RESTORING state across sessions
 
 class WeatherCubit extends HydratedCubit<WeatherState> {
-  WeatherCubit(this._weatherRepository) : super(WeatherState());
-
   final WeatherRepository _weatherRepository;
+
+  WeatherCubit(this._weatherRepository) : super(WeatherState());
 
   Future<void> fetchWeather(String? city) async {
     if (city == null || city.isEmpty) return;

@@ -1,6 +1,9 @@
 ///The main goal of the WeatherRepository is to provide an interface which ABSTRACTS the data provider. In this case, the WeatherRepository will have a dependency on the WeatherApiClient and expose a single public method, getWeather(String city).
+///WeatherRepository'nin temel amacı, veri sağlayıcıyı SOYUTLAYAN bir arayüz sağlamaktır. Bu durumda, WeatherRepository, WeatherApiClient(OpenMeteoApiClient)'e bağımlı olacak ve getWeather(String city) adlı tek bir genel yöntemi kullanıma sunacaktır.
+///Yani OpenMeteoApiClientdan gelen iki methodu birleştirip tek bir methoda indirgeyeceğiz.
 
 ///Consumers of the WeatherRepository are not privy to the underlying implementation details such as the fact that two network requests are made to the metaweather API. The goal of the WeatherRepository is to SEPARATE the "what" from the "how" -- in other words, we want to HAVE A WAY to FETCH WEATHER for a given city, but don't care about how or where that data is coming from.
+///WeatherRepository tüketicileri, metaweather API'sine iki ağ isteğinin yapılması gerçeği gibi temel uygulama ayrıntılarına hakim değildir. WeatherRepository'nin amacı "ne"yi "nasıl"dan AYIRMAK - başka bir deyişle, belirli bir şehir için HAVA DURUMUNU NASIL ALACAĞIMIZI BİLMEMİZ GEREKİR, ancak bu verilerin nasıl veya nereden geldiğini umursamayız.
 
 import 'dart:async';
 

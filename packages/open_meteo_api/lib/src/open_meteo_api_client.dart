@@ -16,11 +16,8 @@ class WeatherRequestFailure implements Exception {}
 /// Exception thrown when weather for provided location is not found.
 class WeatherNotFoundFailure implements Exception {}
 
-/// {@template open_meteo_api_client}
 /// Dart API Client which wraps the [Open Meteo API](https://open-meteo.com).
-/// {@endtemplate}
 class OpenMeteoApiClient {
-  /// {@macro open_meteo_api_client}
   OpenMeteoApiClient({http.Client? httpClient})
       : _httpClient = httpClient ?? http.Client();
 

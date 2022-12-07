@@ -1,4 +1,4 @@
-///We don't want our tests to make real API calls since our goal is to test the API client logic (including all edge cases) and not the API itself. In order to have a consistent, controlled test environment, we will use mocktail (which we added to the pubspec.yaml file earlier) to mock the http client.
+///We don't want our tests to make real API calls since our goal is to test the API client logic (including all edge cases) and not the API itself. In order to have a consistent, controlled test environment, we will use MOCKTAIL (which we added to the pubspec.yaml file earlier) to mock the http client.
 
 // ignore_for_file: prefer_const_constructors
 import 'package:http/http.dart' as http;

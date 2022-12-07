@@ -11,6 +11,8 @@ class WeatherPopulated extends StatelessWidget {
 
   final Weather weather;
   final TemperatureUnits units;
+
+  ///ValueGetter = Talep üzerine bir değer bildirecek olan callbackler için bir signature.
   final ValueGetter<Future<void>> onRefresh;
 
   @override
