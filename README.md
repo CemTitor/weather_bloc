@@ -1,6 +1,6 @@
 # weather_bloc
 
-Weather app that how to manage multiple cubits to implement dynamic theming, pull-to-refresh, and much more. Our weather app will pull live weather data from the public OpenMeteo API and demonstrate how to separate our application into layers (data, repository, business logic, and presentation).
+Weather app that how to manage multiple cubits to implement dynamic theming, pull-to-refresh, and much more. Our weather app will pull live weather data from the public OpenMeteo API and demonstrate how to separate our application into layers (data, repository, feature(business logic, and presentation) ).
 
 ## Project Requirements
 
@@ -33,10 +33,11 @@ In this tutorial, here's what these layers will do:
 
 - Data: retrieve raw weather data from the API
 - Repository: abstract the data layer and expose domain models for the application to consume
-- Business Logic: manage the state of each feature (unit information, city details, themes, etc.)
-- Presentation: display weather information and collect input from users (settings page, search page etc.)
+- Feature :
+  - Business Logic: manage the state of each feature (unit information, city details, themes, etc.)
+  - Presentation: display weather information and collect input from users (settings page, search page etc.)
 
 Repository Layer:
 
-The goal of our repository layer is to abstract our data layer and facilitate communication with the bloc layer. In doing this, the rest of our code base depends only on functions exposed by our repository layer instead of specific data provider implementations. This allows us to change data providers without disrupting any of the application-level code. For example, if we decide to migrate away from metaweather, we should be able to create a new API client and swap it out without having to make changes to the public API of the repository or application layers.
+The goal of our repository layer is to abstract our data layer and facilitate(kolaylastırmak) communication with the bloc layer. In doing this, the rest of our code base depends ONLY ON functions EXPOSED BY our repository layer INSTEAD OF specific data provider implementations. This allows us to change data providers WITHOUT DISRUPTING any of the application-level code. For example, if we DECIDE to migrate away from metaweather, we should BE ABLE TO create a new API client and swap it out WITHOUT HAVING TO MAKE CHANGES to the public API of the repository or application layers.
 
