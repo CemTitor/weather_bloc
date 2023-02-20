@@ -2,6 +2,8 @@
 
 Weather app that how to manage multiple cubits to implement dynamic theming, pull-to-refresh, and much more. Our weather app will pull live weather data from the public OpenMeteo API and demonstrate how to separate our application into layers (data, repository, feature(business logic, and presentation) ).
 
+![flutter_weather](https://user-images.githubusercontent.com/43721794/220087404-1d5717af-30e6-4ab5-883a-29f40178a0c7.gif)
+
 ## Project Requirements
 
 Our app should let users
